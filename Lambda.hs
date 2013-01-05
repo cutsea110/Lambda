@@ -26,7 +26,7 @@ just  x = \n j -> j x
 
   
 -- _either (+2) (*2) (left 3) => 5
--- _either (+2) (*2) (just 3) => 6
+-- _either (+2) (*2) (right 3) => 6
 _either l r e = e l r
 left  x = \l r -> l x
 right y = \l r -> r y
